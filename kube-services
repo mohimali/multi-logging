@@ -1,0 +1,2 @@
+custom-service-name1;2;kubectl -n chosen-namespace logs -l chosen-label -f
+custom-service-name2;3;kubectl -n chosen-namespace logs -l chosen-label -f
