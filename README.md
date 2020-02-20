@@ -7,6 +7,8 @@ The below line has 3 sections.
 - The number 2 is a colour. You can pick 3,4,5,6,7,8,9,10
 - chosen-namespace is the namespace of your pods
 - The last section after the ; can be any command you chose. This one prints out logs based on a label
+- All commands run in the background. If you have a look at the logging.sh file you will see an &
+- To stop the command you can run pkill kubectl but note this will kill all kubectl commands running in the background
 ```
 custom-service-name1;2;kubectl -n chosen-namespace logs -l chosen-label -f
 ```
@@ -25,3 +27,4 @@ custom-service-name1;2;kubectl -n chosen-namespace logs -l chosen-label -f
   custom-service-name1 lots of logging for service-name1 
   custom-service-name2 lots of logging for service-name2
 ```
+
